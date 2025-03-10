@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us </title>
+    <link rel="shortcut icon" href="image gallary/Screenshot (686).png" type="image/x-icon">
+    <link rel="stylesheet" href="hfe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/cfbad6e9ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header sub-header1">
+        <nav>
+
+
+            <div id="bunch">
+                <div class="logo-aim"><a href="index.html"><img src="image gallary/Screenshot (686).png" alt=""
+                            class="logo-aim"></a></div>
+                <div class="aim-name"> <img class="aim-image" src="image/aim-institute.png" alt=""></div>
+
+            </div>
+
+
+            <div class="nav-link" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="Contact us.html">Contact</a></li>
+                    <li><a href="gallary.html">Gallary</a></li>
+                </ul>
+
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="course-detail">
+            <h1>CONTACT US</h1>
+            <p>We are Always Available.</p>
+
+        </div>
+
+    </section>
+
+    <!-- -------------------------------------------Contact us------------------------------------------- -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3215534.475961608!2d71.97260950863534!3d17.86127766155271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7f37294aabd59%3A0x8c3e723a0b45904a!2sA%20D%20MORE%20NURSERY!5e0!3m2!1sen!2sin!4v1699071385687!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>Vangani station West Done wadi Road </h5>
+                        <p>Badlapur, Near A.D. More Nursery</p>
+                        <p>Pincode: 421503</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>9653686720</h5>
+                        <h5>9470706765</h5>
+                        <p>Alway Available
+
+                        </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5 style="font-size: 17px;">asheshambani@gmail.com</h5>
+                        <p>Email us Your queries</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <h1>Enroll Now</h1>
+                <form action="./form-handlar.php">
+                    <input type="text" name="name" placeholder="Enter your Name" required>
+                    <input type="email" name="email" placeholder="Enter your Email" required>
+                    <!-- <input type="tel" name="mobile-no" placeholder="Enter your mobile no" required> -->
+                    <input type="text" name="course" placeholder="course intrested in" required>
+                    <textarea rows="5" name="Message" placeholder="Message" required></textarea>
+                    <Button type="submit" class="hero-btn"> Send Message</Button>
+                </form>
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ------------------------------------------footer----------------------------------------------------------- -->
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Academician's Institution, Guiding Aspirants of NEET with Affordable Quality Education. Top Class Faculty
+            team & individual attention Making No. 1 Coaching of vagani (west) & Most preferred Institution in
+            maharastra .</p>
+        <div class="icon">
+            <a href="https://www.facebook.com/profile.php?id=100063765683160&sk=about"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a
+                href="https://www.instagram.com/aimbiologyclasses/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i
+                    class="fa-brands fa-instagram"></i></i></a>
+            <a href=""> <i class="fa-brands fa-twitter"></i></i></a>
+            <a href="https://youtube.com/@aimbiologyclasses?si=R1bexHeZ_CDjmsjG"><i
+                    class="fa-brands fa-youtube"></i></i></i></a>
+
+
+
+
+        </div>
+        <p>Made with<i class="fa-regular fa-heart"></i>Website banao.org </p>
+
+
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,765 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(255, 250, 209, 0.85),rgba(223, 234, 235, 0.85)),url(image/bg-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+nav {
+    display: flex;
+    padding: .5% 4%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(242, 198, 68);
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+#bunch{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    box-sizing: border-box;
+
+}
+
+.logo-aim{
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+}
+.aim-name img{
+    width: 300px;
+    height: 40px;
+    margin-left: 10px;
+   
+}
+
+
+
+
+.nav-link {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-link ul li a {
+    color: black;
+    text-decoration: none;
+    font: 13px;
+    font-family: 'Playfair Display', serif;
+    ;
+    font-weight: bold;
+
+}
+
+.nav-link ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(3,114,96);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-link ul li:hover::after {
+    width: 100%;
+
+}
+.nav-link ul li a:hover{
+    color: rgb(244, 242, 243);
+}
+
+.text-box {
+    width: 100%;
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    
+    text-align: center;
+    justify-content: space-between;
+    flex: 1;
+   
+    
+}
+
+.text-box-col{
+     
+    flex-basis:50% ;
+    padding: 30px;
+    flex-grow: 1;
+    
+    
+    /* border: 2px solid red; */
+}
+.text-box img{
+    width: 80%;
+    padding-top: 30px;
+    
+}
+
+.text-box h1 {
+    font-size: 2.5rem;
+    border-left: 8px solid rgb(3, 114, 96);
+    border-radius: 3px;
+    margin: 15px 12px;
+   
+   
+    /* padding-left: -20px; */
+    /* font-family: 'Dancing Script', cursive; */
+   
+
+}
+.Faculty-allen{
+    font-size: 2.5rem;
+    /* display: none; */
+}
+
+.text-box p {
+    display: none;
+    margin: 3px 0 20px;
+    font-size: 18px;
+    text-align: center;
+    color:#c50d77;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(3, 114, 96);
+    border: 2px solid rgb(3, 114, 96);
+    padding: 2px 20px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hero-btn:hover {
+    border: 2px solid rgb(3, 114, 96);
+    background-color: rgb(3, 114, 96);
+    color: white;
+    transition: .5s;
+}
+#join-us{
+    margin-bottom: 20px;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+.contact-btn{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 5px;
+    bottom: 140px;
+
+
+}
+.contact-btn .fa-brands{
+    color: green;
+    font-size: 60px;
+    padding: 3px 5px;
+}
+.contact-btn .fa-solid{
+    color: green;
+    font-size: 60px;
+    padding: 3px 5px;
+}
+
+
+
+@media (max-width:700px) {
+    .text-box h1 {
+        font-size: 34px;
+        /* margin-top: 10px; */
+
+    }
+
+    .nav-link ul li {
+        display: block;
+    }
+
+
+    .nav-link {
+        position: fixed;
+        background-color: rgb(3, 114, 96);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+        /* overflow: hidden; */
+    }
+
+    nav .fa-solid {
+        display: block;
+        color: #121111;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-link ul {
+        padding: 15px;
+    }
+    .text-box {
+       flex-wrap: wrap-reverse;
+      
+        
+    }
+    #text{
+        padding-top:0px ;
+    }
+    .text-box img{
+        padding: 0px;
+        padding-top: 25PX;
+        padding-bottom:5px ;
+        width:88%;
+    }
+    .text-box-col{
+        padding: 0px;
+        flex-grow: 1;
+        flex: column;
+        flex-basis:auto;
+    }
+    .Faculty-allen{
+        display: none;
+    }
+
+    .text-box p {
+        display: block;
+        
+    }
+    
+    .aim-name img{
+        width: 240px;
+        height: 40px;
+        margin-left: 10px;
+       
+    }
+   
+}
+
+
+/* ---------------------------------------------course------------------------------------- */
+
+.course {
+    width: 80%;
+    margin: auto;
+   margin-top: 50px;
+    text-align: center;
+    padding-top: 0px;
+    
+}
+
+.course h1 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.course p {
+    color: #464652;
+    font-size: 14px;
+    font-weight: 22px;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.course-col {
+    flex-basis: 31%;
+    background: #e3f0ed;
+    border-radius: 10px;
+    margin-bottom: 8%;
+    
+    padding: 0px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    flex-wrap: wrap-reverse;
+
+}
+
+.course-col h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 0px 0;
+    background-color: #0cb896;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 6px 0px;
+    
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+
+}
+
+/* ---------------------------------------------faculty----------------------------------------- */
+
+
+.faculty {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.faculty h1{
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+.faculty-col {
+    flex-basis: 25%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    border: 1px solid black;
+    padding: 5px;
+    /* text-align: center; */
+    background-color: rgb(240, 254, 255);
+    margin-left: 10px;
+    margin-right: 10px;
+   
+
+}
+
+.faculty-col img {
+    width: 100%;
+    border-radius: 10px;
+  
+    
+}
+
+
+.faculty-col p {
+    padding: 5px;
+
+}
+
+.faculty-col h3 {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    text-align: left;
+    padding: 5px;
+    
+}
+
+
+
+
+
+
+/* ------------------------------------------------------facility---------------------------------------------- */
+
+.facilities {
+    width: 80%;
+    margin: auto;
+    
+    text-align: center;
+    margin-top: 100px;
+}
+
+.facilities-col {
+    flex-basis: 22%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    border: 1px solid black;
+    padding: 5px;
+    /* text-align: center; */
+    background-color: aliceblue;
+   
+
+}
+
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+  
+    
+}
+
+
+.facilities-col p {
+    padding: 5px;
+
+}
+
+.facilities-col h3 {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    text-align: left;
+    padding: 5px;
+    
+}
+
+/* --------------------------------------------review-------------------------------------------- */
+
+.testimonials {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.testimonials-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #e3f0ed;
+    padding: 17px;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.testimonials-col img {
+    height: 30px;
+    margin-left: 2px;
+    margin-right:4px;
+    border-radius: 50%;
+
+}
+
+.testimonials-col h3 {
+    margin-top: 15px;
+    text-align: left;
+
+}
+
+.testimonials-col p {
+    padding: 5px;
+}
+
+.testimonials-col .fa-solid,
+.fa-regular {
+    color: #f44336;
+    margin-top: 5px;
+}
+
+@media (max-width:700px) {
+    .testimonials-col img {
+
+        margin-left: 0px;
+        margin-right: 15px;
+
+    }
+}
+
+.cta {
+    margin: 10px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image/enroll\ image.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 90px 0;
+    color: white;
+}
+
+.cta h1 {
+    color: white;
+    padding: 0;
+    margin-bottom: 40px;
+
+}
+
+@media (max-width:700px) {
+    .cta h1 {
+        font-size: 24px;
+    }
+
+}
+
+/* --------------------------------------------------------footer---------------------------------------------- */
+
+.footer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    /* padding: 15px 0; */
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    padding: 10px 0px;
+}
+
+.icon .fa-brands {
+    color: #f44336;
+    margin: 18px 13px;
+    cursor: pointer;
+    padding: 3px 3px;
+    background-color: #95c7be;
+    border-radius: 3px;
+    box-shadow: 1.5px 1.5px;
+}
+
+/* ----------------------------------------------About us page------------------------------------------------- */
+.sub-header{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30,0.7), rgba(4, 9, 30, 0.4)), url(image/university.jpg)  ;
+    background-position: center;
+    background-size: cover;
+    
+
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+
+}
+.sub-header h1{
+    margin-top: 120px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom:0px;
+
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+
+}
+.about-col img{
+    width: 100%;
+    
+}
+.about-col h1{
+    padding-top: 0;
+   font-size: 2.5rem;
+   color:rgb(3, 114, 96) ;
+}
+.about-col p{
+    padding: 15px 0 25px;
+    font-size: 1.17rem;
+}
+.review{
+    padding: 0;
+}
+
+@media (max-width:700px) {
+    .sub-header{
+        height: 35vh;
+    }
+
+}
+
+/* ----------------------------------------------course page-------------------------------- */
+
+
+.sub-header1{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30,0.7), rgba(4, 9, 30, 0.4)), url(image/Online_Training.png)  ;
+    background-position: center;
+    background-size: cover;
+    
+
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+
+}
+.row2{
+   
+   
+    justify-content: center;
+    
+}
+.course-col2{
+  
+     margin-left: 20px;
+     margin-right: 20px;
+     
+}
+
+.course-detail{
+    text-align: left;
+    margin-left: 20px;
+    padding: 20px;
+    margin-top: -70px;
+}
+.course-detail h1{
+    padding: 10px;
+    font-size: 3rem;
+
+}
+.course-detail p{
+    padding-bottom: 20px;
+}
+
+
+@media (max-width:700px) {
+    .course-detail h1{
+        padding: 10px;
+        font-size: 1.3rem;
+    
+    }
+    .sub-header1{
+        height: 40vh;
+    }
+
+}
+/* --------------------------------------------Gallary-----------------------------------------------*/
+
+#gallary{
+    margin-top: 3%;
+}
+.gallary-row {
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallary {
+    width: 90%;
+    margin: auto;
+
+    text-align: center;
+    padding-top: 0px;
+
+}
+
+.gallary-col {
+    flex-basis: 24%;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+
+
+
+}
+
+.gallary-col img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+.gallary h1{
+    margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+.gallary-row {
+flex-direction: column;
+}
+
+
+
+} 
+
+/* --------------------------------------------contact us page------------------------------------- */
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+
+}
+.location iframe{
+    width: 100%;
+
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+    
+}
+.contact-col h1{
+    text-align: center;
+    color: rgb(0, 128, 79);
+    margin-bottom: 10px;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa-solid{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: rgb(146, 163, 153);
+    font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #c4cecc;
+    box-sizing: border-box;
+}
